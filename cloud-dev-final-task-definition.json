@@ -1,9 +1,9 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:578792063285:task-definition/cloud-dev-final-task:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:578792063285:task-definition/cloud-dev-final-task:4",
   "containerDefinitions": [
     {
       "name": "cloud-dev-final-container",
-      "image": "578792063285.dkr.ecr.us-east-1.amazonaws.com/cloud-dev-final/image:tag",
+      "image": "578792063285.dkr.ecr.us-east-1.amazonaws.com/cloud-dev-final/image:latest",
       "cpu": 0,
       "portMappings": [
         {
@@ -33,7 +33,7 @@
   "family": "cloud-dev-final-task",
   "executionRoleArn": "arn:aws:iam::578792063285:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "revision": 1,
+  "revision": 4,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -71,7 +71,7 @@
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2023-02-08T19:44:33.212Z",
+  "registeredAt": "2023-02-08T20:41:59.038Z",
   "registeredBy": "arn:aws:iam::578792063285:user/Administrator",
   "tags": []
 }
