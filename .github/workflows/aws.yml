@@ -36,7 +36,7 @@ env:
   ECS_SERVICE: cloud-dev-demo-service # set this to your Amazon ECS service name
   ECS_CLUSTER: cloud-dev-demo-cluster # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION:
-    cloud-dev-final-task-definition.json # set this to the path to your Amazon ECS task definition
+    .app/cloud-dev-final-task-definition.json # set this to the path to your Amazon ECS task definition
     # file, e.g. .aws/task-definition.json
   CONTAINER_NAME:
     cloud-dev-final-container # set this to the name of the container in the
@@ -83,8 +83,8 @@ jobs:
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
-          task-definition: cloud-dev-final-task-definition.json
-          container-name: cloud-dev-final-container
+          task-definition: ${{ env.ECS_TASK_DEFINITION }}
+          container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
