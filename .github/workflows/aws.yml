@@ -36,7 +36,7 @@ env:
   ECS_SERVICE: cloud-dev-demo-service # set this to your Amazon ECS service name
   ECS_CLUSTER: cloud-dev-demo-cluster # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION:
-    cloud-dev-final-task-definition.json # set this to the path to your Amazon ECS task definition
+    ./cloud-dev-final-task-definition.json # set this to the path to your Amazon ECS task definition
     # file, e.g. .aws/task-definition.json
   CONTAINER_NAME:
     cloud-dev-final-container # set this to the name of the container in the
