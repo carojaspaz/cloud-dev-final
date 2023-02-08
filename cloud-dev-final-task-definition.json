@@ -1,5 +1,5 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:578792063285:task-definition/cloud-dev-final-task-definition:3",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:578792063285:task-definition/cloud-dev-final-task:1",
   "containerDefinitions": [
     {
       "name": "cloud-dev-final-container",
@@ -23,17 +23,17 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-create-group": "true",
-          "awslogs-group": "/ecs/cloud-dev-final-task-definition",
+          "awslogs-group": "/ecs/cloud-dev-final-task",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
       }
     }
   ],
-  "family": "cloud-dev-final-task-definition",
+  "family": "cloud-dev-final-task",
   "executionRoleArn": "arn:aws:iam::578792063285:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "revision": 3,
+  "revision": 1,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -71,7 +71,7 @@
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2023-02-08T19:31:37.248Z",
+  "registeredAt": "2023-02-08T19:44:33.212Z",
   "registeredBy": "arn:aws:iam::578792063285:user/Administrator",
   "tags": []
 }
