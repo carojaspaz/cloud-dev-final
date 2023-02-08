@@ -1,6 +1,4 @@
-FROM alpine:3.17
-
-ENV NODE_VERSION 18.14.0
+FROM node:18
 
 WORKDIR /app
 COPY . /app
