@@ -15,10 +15,10 @@
   },
   "scripts": {
     "start": "react-scripts start --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --prod",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "serve -s dist"
+    "serve": "serve -s build -p 5000"
   },
   "eslintConfig": {
     "extends": [

@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 const Root = () =>
   <Router>
     <Switch>
-      <Route exact path="/home" component={App} />
+      <Route exact path="/" component={App} />
       <Route component={NotFound} />
     </Switch>
   </Router>
